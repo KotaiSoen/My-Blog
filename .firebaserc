@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "my-blog-e6eaa",
+    "my-blog": "my-blog-e6eaa"
+  },
+  "targets": {
+    "my-blog-e6eaa": {
+      "hosting": {
+        "kanban-fire": [
+          "my-blog-e6eaa"
+        ]
+      }
+    }
+  }
+}

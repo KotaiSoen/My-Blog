@@ -1,0 +1,20 @@
+<app-header></app-header>
+<div>
+    <h2>Latest posts</h2>
+    <mat-card *ngFor="let blogPost of blogPosts" routerLink="/admin-post-component" [state]="blogPost">
+        <div>
+            <mat-card-title>{{blogPost.title}}</mat-card-title>
+            <img src={{blogPost.img}}>
+            <mat-card-content>
+                {{blogPost.content}}
+            </mat-card-content>
+        </div>
+        <div class="mat-icon">
+            <mat-icon>create</mat-icon>
+            <mat-icon>delete</mat-icon>
+        </div>
+    </mat-card>
+</div>
+
+
+

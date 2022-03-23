@@ -1,0 +1,18 @@
+h2 {
+    font-size: 30px;
+}
+
+label {
+    color: white;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+/* small {
+    color: red !important;
+} */
+

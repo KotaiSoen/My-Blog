@@ -1,0 +1,52 @@
+<app-header></app-header>
+<div class="fluid-container">
+    <h2>Contact Us</h2>
+    <form (ngSubmit)="submitForm()" #contactForm="ngForm">
+        <div class="field">
+            <label for="" class="label">Name</label>
+            <input
+            type="text" 
+            name='name' 
+            class="input" 
+            [(ngModel)]="name"
+            #nameInput="ngModel"
+            required>
+            <small class="form-text text-muted" *ngIf="nameInput.invalid && (nameInput.dirty || nameInput.touched)">
+                Your name is required
+            </small>
+        </div>
+        <div class="field">
+            <label for="" class="label">Email</label>
+            <input 
+            type='email' 
+            name='email' 
+            class="input" 
+            [(ngModel)]="email"
+            #emailInput="ngModel"
+            required
+            email>
+            <small class="form-text text-muted" *ngIf="emailInput.invalid && (emailInput.dirty || emailInput.touched)">
+                Your email is required and needs to be a valid email
+            </small>
+        </div>
+        <div class="field">
+            <label for="" class="label">Your message</label>
+            <textarea 
+             name="message" 
+             id="" 
+             cols="30" 
+             rows="10" 
+             class="textarea" 
+             [(ngModel)]="message"
+             required>
+            </textarea>
+        </div>
+        <button 
+        type="submit" 
+        class="btn btn-warning"
+        [disabled]="contactForm.invalid">
+            Send!
+        </button>
+        
+    </form>
+</div>

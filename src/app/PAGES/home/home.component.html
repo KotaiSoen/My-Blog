@@ -1,0 +1,11 @@
+<app-header></app-header>
+<h2>Latest posts</h2>
+<mat-card *ngFor="let blogPost of blogPosts" routerLink="/post-component" [state]="blogPost">
+    <mat-card-title>{{blogPost.title}}</mat-card-title>
+    <img src={{blogPost.img}}>
+    <mat-card-content>
+        {{blogPost.content}}
+    </mat-card-content>
+</mat-card>
+<p *ngFor="let post of posts">{{post.id}}</p>
+
