@@ -1,3 +1,7 @@
+.fluid-container {
+    padding: 20px;
+}
+
 h2 {
     font-size: 30px;
 }
@@ -10,9 +14,11 @@ label {
     display: flex;
     flex-direction: column;
     width: 30%;
+    padding-top: 10px;
 }
 
-/* small {
-    color: red !important;
-} */
+button {
+    margin-top: 5px;
+    height: 40px;
+}
 

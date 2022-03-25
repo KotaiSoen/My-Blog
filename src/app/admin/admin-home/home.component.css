@@ -2,6 +2,7 @@ mat-card {
     height: 300px;
     margin: 20px;
     display: flex;
+    justify-content: space-between;
 }
 
 mat-card-content {
@@ -13,9 +14,9 @@ mat-card-content {
 .mat-icon {
   display: flex;
   align-self: flex-end;
-  position: relative;
-  /* right: 0; */
-  left: 210px;
+  
+ position: relative;
+ right: 10px;
 
 }
 
@@ -28,7 +29,20 @@ a {
     text-decoration: none;
 }
 
-h2 {
+.latest {
     padding-left: 20px;
 }
 
+.add-new {
+    display: flex;
+    justify-content: space-between;
+}
+
+.new-post {
+    padding-right: 20px;
+}
+
+.new-post:hover {
+    cursor: pointer;
+    color: purple;
+}

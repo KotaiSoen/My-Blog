@@ -1,6 +1,9 @@
 <app-header></app-header>
 <div>
-    <h2>Latest posts</h2>
+    <div class="add-new">
+        <h2 class="latest">Latest posts</h2>
+        <h2 class="new-post" routerLink="/add-new-post">Add new post</h2>
+    </div>
     <mat-card *ngFor="let blogPost of blogPosts" routerLink="/admin-post-component" [state]="blogPost">
         <div>
             <mat-card-title>{{blogPost.title}}</mat-card-title>

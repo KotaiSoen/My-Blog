@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostComponent implements OnInit {
 
-  fullBlogPost = history.state;
+  post = history.state;
 
   constructor() { }
 

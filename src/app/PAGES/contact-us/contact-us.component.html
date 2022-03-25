@@ -1,12 +1,12 @@
 <app-header></app-header>
 <div class="fluid-container">
     <h2>Contact Us</h2>
-    <form (ngSubmit)="submitForm()" #contactForm="ngForm">
+    <form (ngSubmit)="sendEmail($event)" #contactForm="ngForm">
         <div class="field">
             <label for="" class="label">Name</label>
             <input
             type="text" 
-            name='name' 
+            name='user_name' 
             class="input" 
             [(ngModel)]="name"
             #nameInput="ngModel"
@@ -19,7 +19,7 @@
             <label for="" class="label">Email</label>
             <input 
             type='email' 
-            name='email' 
+            name='user_email' 
             class="input" 
             [(ngModel)]="email"
             #emailInput="ngModel"
@@ -35,7 +35,7 @@
              name="message" 
              id="" 
              cols="30" 
-             rows="10" 
+             rows="8" 
              class="textarea" 
              [(ngModel)]="message"
              required>
@@ -44,6 +44,7 @@
         <button 
         type="submit" 
         class="btn btn-warning"
+        value="Send"
         [disabled]="contactForm.invalid">
             Send!
         </button>

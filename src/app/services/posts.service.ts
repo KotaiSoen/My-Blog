@@ -26,5 +26,9 @@ export class PostsService {
   getPosts() {
     return this.posts;
   }
+
+  addPost(post: Post) {
+    this.postsCollection.add(post);
+  }
 }
 
