@@ -12,8 +12,6 @@ import { LoginModule } from './login/login.module';
 import { AngularFireModule } from '@angular/fire/compat';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
-import { AuthService } from './services/auth.service';
-
  
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -72,7 +70,6 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
   ],
   providers: [
     PostsService,
-    AuthService,
     ScreenTrackingService,UserTrackingService,
   ],
   bootstrap: [AppComponent]

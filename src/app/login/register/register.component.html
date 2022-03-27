@@ -1,12 +1,15 @@
 <form action="" [formGroup]="registerForm">
-    <div>
-        <label for="">Your email</label>
+    <div class="form-field">
+        <label for="">Your email:</label>
         <input type="text" formControlName="email" >
     </div>
-    <div>
-        <label for="">Your password</label>
+    <div class="form-field">
+        <label for="">Your password:</label>
         <input type="password" formControlName="password">
     </div>
-    <button (click)="createUser()">Create a User</button>
-    <a routerLink="/login">Go to Login</a>
+    <div class="create">
+        <button (click)="createUser()">Create a User</button>
+        <a routerLink="/login">Go to Login</a>
+    </div>
+    
 </form>

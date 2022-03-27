@@ -11,26 +11,6 @@ export class HomeComponent implements OnInit {
 
   posts!: Post[];
 
-  blogPosts: { title: string, img: string, content: string }[] = [
-    {
-      title: '',
-      img: "",
-      content: ''
-    },
-    {
-      title: '',
-      img: '',
-      content: ''
-    },
-    {
-      title: '',
-      img: '',
-      content: ''
-    }
-  ]
-
-  
-
   constructor(private postService: PostsService) { }
 
   ngOnInit(): void {

@@ -1,0 +1,9 @@
+<form (ngSubmit)="onSubmit(post)">
+    <label for="">Input the header of your article here:</label>
+    <input type="text" name="header" [(ngModel)]="post.header">
+    <label for="">Your image url:</label>
+    <input type="text" name="imageUrl" [(ngModel)]="post.image">
+    <label for="">Input your content here:</label>
+    <textarea name="" id="" cols="30" rows="10" name="content" [(ngModel)]="post.content"></textarea>
+    <button type="submit">Edit post</button>
+</form>

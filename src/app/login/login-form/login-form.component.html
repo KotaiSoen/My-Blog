@@ -1,12 +1,15 @@
 <form action="" [formGroup]="loginForm">
-    <div>
-        <label for="">Your email</label>
+    <div class="form-field">
+        <label for="">Your email:</label>
         <input type="text" formControlName="email" [(ngModel)]="admin">
     </div>
-    <div>
-        <label for="">Your password</label>
+    <div class="form-field">
+        <label for="">Your password:</label>
         <input type="password" formControlName="password">
     </div>
-    <button (click)="onLogin()">Login</button>
-    <a routerLink="/register">Create a User</a>
+    <div class="create">
+        <button (click)="onLogin()">Login</button>
+        <a routerLink="/register">Create a User</a>
+    </div>
+    
 </form>

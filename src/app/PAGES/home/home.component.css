@@ -3,6 +3,10 @@ mat-card {
     margin: 20px;
 }
 
+mat-card-title:hover {
+    cursor: pointer;
+}
+
 mat-card-content {
     padding-top: 10px;
     font-size: medium;

@@ -1,3 +1,12 @@
+label {
+    padding-right: 5px;
+}
+
+a {
+    color: purple;
+    text-decoration: none;
+}
+
 :host {
     height: 100vh;
     display: flex;
@@ -6,7 +15,24 @@
     justify-content: center;
 }
 
+form {
+    background-color: white;
+    color: black;
+    padding: 130px 40px;
+}
 
-label {
+button {
+    border: none;
+    background-color: purple;
     color: white;
+}
+
+.form-field {
+    padding-bottom: 20px;
+}
+
+.create {
+    /* margin-top: 30px; */
+    display: flex;
+    justify-content: space-around;
 }

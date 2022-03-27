@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PostsService } from 'src/app/services/posts.service';
 import { Post } from 'src/app/post';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-new',
@@ -14,7 +15,7 @@ export class AddNewComponent implements OnInit {
     content: '',
   }
 
-  constructor(private postService: PostsService) { }
+  constructor(private postService: PostsService, private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -25,7 +26,10 @@ export class AddNewComponent implements OnInit {
       this.post.header = '';
       this.post.content = '';
       this.post.image = '';
+
+      this.router.navigate(['admin']);
     }
+
   }
 
 }

@@ -4,6 +4,13 @@ h1 {
     display: flex;
     justify-content: center;
     font-family: Josefin-sans;
+    position: relative;
+    left: 80px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
 }
 
 .navigation {
@@ -30,4 +37,15 @@ a {
     background-color: black;
     padding: 5px 100px;
     transition: background-color 500ms ease-in, padding 500ms ease-in;
+}
+
+button {
+    height: 30px;
+    width: 80px;
+    background-color: purple;
+    border: none;
+    color: white;
+    align-self: center;
+    position: relative;
+    left: 500px;
 }

@@ -10,6 +10,7 @@ import { HomeComponent } from './admin-home/home.component';
 import { PostComponent } from './admin-post/post.component';
 import { MatIconModule } from '@angular/material/icon';
 import { AddNewComponent } from './add-new/add-new.component';
+import { EditItemComponent } from './edit-item/edit-item.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { AddNewComponent } from './add-new/add-new.component';
     HomeComponent,
     PostComponent,
     AddNewComponent,
+    EditItemComponent,
   ],
   imports: [
     CommonModule,
